@@ -39,7 +39,8 @@
     "docpad-plugin-text": "~2.3.2",
     "docpad-plugin-jade": "~2.6.2",
     "marked": "~0.3.0",
-    "nodemailer": "~0.6.0"
+    "nodemailer": "~0.6.0",
+    "docpad-plugin-cleanurls": "~2.6.2"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.5.6",

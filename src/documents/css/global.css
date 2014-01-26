@@ -4,8 +4,8 @@ body{padding:0; margin:0; font-size:10px; font-family: Arial, sans-serif; color:
 .clear{clear:both}
 body img{border:none}
 /*Layout*/
-.layout_top{background:url(../images/bg_top.gif) no-repeat 0px 0px; width:776px; height:35px; display:block; margin-left:auto; margin-right:auto; margin-top:65px; padding:0 12px}
-.global_wrap{width:776px; background:url(../images/bg_global.gif) repeat-y; padding:0 12px; margin-left:auto; margin-right:auto;}
+.layout_top{background:url(/images/bg_top.gif) no-repeat 0px 0px; width:776px; height:35px; display:block; margin-left:auto; margin-right:auto; margin-top:65px; padding:0 12px}
+.global_wrap{width:776px; background:url(/images/bg_global.gif) repeat-y; padding:0 12px; margin-left:auto; margin-right:auto;}
 .global_header{ background-color:#FFFFFF; width:773px}
 
 /*Header*/
@@ -15,8 +15,8 @@ body img{border:none}
 
 /*top navgation*/
 .global_topNavigation{clear:both}
-.global_topNavigation ul{padding:3px 0 0 0; margin:0; display:block; height:18px; font-size:1.1em; background:url(../images/bg_secondMenu.gif) repeat-x}
-.global_topNavigation #top{background:url(../images/bg_firstMenu.gif) repeat-x}
+.global_topNavigation ul{padding:3px 0 0 0; margin:0; display:block; height:18px; font-size:1.1em; background:url(/images/bg_secondMenu.gif) repeat-x}
+.global_topNavigation #top{background:url(/images/bg_firstMenu.gif) repeat-x}
 .global_topNavigation ul li{display:block; width:192px; text-align:center; float:left; color:#CCCCCC;}
 
 .global_topNavigation a:link,.global_topNavigation a:visited{color:white; text-decoration:none;}
@@ -32,31 +32,31 @@ body img{border:none}
 
 
 .leftBox_whychoose{width:216px; text-align:left}
-.leftBox_whychoose #head{background:url(../images/whychoose_head.gif) no-repeat; color:white; font-size:1.25em; font-weight:bold; height:28px; padding-top:12px; text-align:center;}
+.leftBox_whychoose #head{background:url(/images/whychoose_head.gif) no-repeat; color:white; font-size:1.25em; font-weight:bold; height:28px; padding-top:12px; text-align:center;}
 .leftBox_whychoose #mid{ border:2px solid #68C9D0; border-bottom:none; border-top:none; background-color:#FFFFFF; color:#68C9D0}
-.leftBox_whychoose #bottom{height:30px; background:url(../images/whychoose_bottom.gif) no-repeat;}
+.leftBox_whychoose #bottom{height:30px; background:url(/images/whychoose_bottom.gif) no-repeat;}
 .leftBox_whychoose ul{padding:15px; margin:0; margin-left:16px; padding-bottom:0}
 
 .leftBox_cosmeticDentalTreatments{ width:210px; margin-right:5px}
-.leftBox_cosmeticDentalTreatments #head{background:url(../images/bg_boxHeader2.gif) no-repeat; height:55px; text-align:center; padding-top:8px;}
+.leftBox_cosmeticDentalTreatments #head{background:url(/images/bg_boxHeader2.gif) no-repeat; height:55px; text-align:center; padding-top:8px;}
 .leftBox_cosmeticDentalTreatments td{ padding-left:14px; font-weight:bold}
 .leftBox_cosmeticDentalTreatments #mid{border:2px solid #68C9D0; border-bottom:none; border-top:none; background-color:#FFFFFF; color:#68C9D0; text-align:left}
-.leftBox_cosmeticDentalTreatments #bottom{ background:url(../images/bg_boxBottom2.gif) no-repeat; height:19px;}
+.leftBox_cosmeticDentalTreatments #bottom{ background:url(/images/bg_boxBottom2.gif) no-repeat; height:19px;}
 .leftBox_cosmeticDentalTreatments a:link, .leftBox_cosmeticDentalTreatments a:visited{ text-decoration:none; color:#68C9D0}
 .leftBox_cosmeticDentalTreatments a:hover{text-decoration:underline}
 
-.green_btn{background:transparent url(../images/btn_bgGreen.png) no-repeat scroll 0 0; float:right; font-size:1.2em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
-.green_btn2{background:transparent url(../images/btn_bgGreen3.png) no-repeat scroll 0 0; float:right; font-size:1.2em; height:76px; padding:10px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
+.green_btn{background:transparent url(/images/btn_bgGreen.png) no-repeat scroll 0 0; float:right; font-size:1.2em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
+.green_btn2{background:transparent url(/images/btn_bgGreen3.png) no-repeat scroll 0 0; float:right; font-size:1.2em; height:76px; padding:10px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
 #lessPadding{padding:5px 30px 10px 15px}
 
-.zoomVideo{ padding:12px 20px 2px 0; width:197px; height:168px; background:url(../images/bg_video.png) no-repeat}
+.zoomVideo{ padding:12px 20px 2px 0; width:197px; height:168px; background:url(/images/bg_video.png) no-repeat}
 
 #floatedImg{float:left; margin-right:12px;}
 
 #contact_bus,#contact_tube,#contact_overground{padding:6px 0 14px 45px; margin-top:8px}
-#contact_bus{background:url(../images/bus_icon.gif) no-repeat}
-#contact_tube{background:url(../images/tube_icon.gif) no-repeat}
-#contact_overground{background:url(../images/overground_icon.gif) no-repeat}
+#contact_bus{background:url(/images/bus_icon.gif) no-repeat}
+#contact_tube{background:url(/images/tube_icon.gif) no-repeat}
+#contact_overground{background:url(/images/overground_icon.gif) no-repeat}
 #google_box{border:2px #68C9D0 solid;}
 .pinkTxt {color: #B42D7E}
 
@@ -67,13 +67,13 @@ body img{border:none}
 .content_right{}
 
 /*footer*/
-.global_footer{ background:url(../images/bg_bottom.gif) no-repeat; width:776px; padding:0 12px; margin:0 auto; height:40px; color:#7DC567; font-size:1.2em; text-align:center}
+.global_footer{ background:url(/images/bg_bottom.gif) no-repeat; width:776px; padding:0 12px; margin:0 auto; height:40px; color:#7DC567; font-size:1.2em; text-align:center}
 .global_footer #address{padding:40px 20px 10px 20px;}
 .global_footer #address #address_spacer{padding:0 8px}
 .global_footer .box_wrap{ padding:0 35px; padding-bottom:10px; color:#B42D7E; font-size:.9em; word-spacing:.2em}
 .global_footer .box_wrap a:link, .global_footer .box_wrap a:visited{color:#B42D7E; text-decoration:none}
 .global_footer .box_wrap a:hover{text-decoration:underline}
-.global_footer .box_wrap #footer_box{ display:block; width:180px; height:95px; padding:32px 15px; float:left; margin-top:25px; background:url(../images/footer_box.gif) no-repeat 5px 10px}
+.global_footer .box_wrap #footer_box{ display:block; width:180px; height:95px; padding:32px 15px; float:left; margin-top:25px; background:url(/images/footer_box.gif) no-repeat 5px 10px}
 
 .global_footer .box_wrap #bottom_link{color:#6D6E71}
 .global_footer .box_wrap #rights{color:#808184; font-size:.85em}
@@ -84,7 +84,7 @@ body img{border:none}
 /*contact form*/
 .contactForm{ width:400px; border:1px #B42D7E solid; margin-top:20px; padding:10px;}
 .form_error {background:#68C9D0; padding:5px; color:#fff}
-.emailGreen_btn a:link{background:transparent url(../images/btn_bgContactGreen.png) no-repeat scroll 0 0; float:right; font-size:1.2em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#68C9D0}
+.emailGreen_btn a:link{background:transparent url(/images/btn_bgContactGreen.png) no-repeat scroll 0 0; float:right; font-size:1.2em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#68C9D0}
 .emailGreen_btn span{font-size:2px;}
 
 /*-------------- Common ---------------- */
