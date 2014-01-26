@@ -1,0 +1,39 @@
+{
+    "name": "docpad-plugin-formbyemail",
+    "version": "2.0.0",
+    "description": "DocPad plugin that emails the entire content of a form. Based on contactify plugin",
+    "homepage": "https://github.com/thaume/docpad-plugin-contactify",
+    "keywords": [
+        "docpad",
+        "docpad-plugin",
+        "form",
+        "mail"
+    ],
+    "author": "Tom Coquereau <tom@thau.me> (http://thau.me)",
+    "maintainers": [
+        "Tom Coquereau <tom@thau.me> (http://thau.me)"
+    ],
+    "contributors": [
+        "Tom Coquereau <tom@thau.me> (http://thau.me)"
+    ],
+    "bugs": {
+        "url": "https://github.com/thaume/docpad-plugin-contactify/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/thaume/docpad-plugin-contactify.git"
+    },
+    "engines": {
+        "node": ">=0.8"
+    },
+    "peerDependencies": {
+        "docpad": "6"
+    },
+    "dependencies": {
+        "nodemailer": ">=0.4.4"
+    },
+    "devDependencies": {
+        "coffee-script": "~1.6.2"
+    },
+    "main": "./src/formbyemail.plugin.coffee"
+}
