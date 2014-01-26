@@ -1,229 +1,64 @@
-!!! transitional
-html(xmlns='http://www.w3.org/1999/xhtml')
-    head
-        meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
-        link(href='css/global.css', rel='stylesheet', type='text/css')
-        script(src='js/email.js')
-        //if IE
-        style.
-            div { behavior: url(includes/iepngfix.htc)}
-        //if gt IE 6
-        link(href='css/ie.css', rel='stylesheet', type='text/css')
-        //if IE 6
-        link(href='css/ie6.css', rel='stylesheet', type='text/css')
-        title General Dental care | SE1 Dentist Old Kent Road Dental Studio London SE1
-        meta(name='description', content='High Quality and affordable NHS and General Dental care in London SE1')
-        meta(name='keywords', content='oral health, general dental care dentist london se1, old kent road, central london denist, city dentist, south east london dentist, southwark dentist, south london dentist, lambeth dentist, se dentist')
-    body
-        .layout_top
-        .global_wrap
-            .global_header
-                .logo
-                    a(href='index.html')
-                        a(href='index.html')
-                            img(src='images/logo.gif', border='0')
-                .top_right
-                    #phone_no
-                        img(src='images/phone.jpg', alt='call us on:020 7701 7878', width='184', height='46')
-                    br
-                    a(href='booking.html')
-                        img(src='images/btn_bookAppointemt.jpg', alt='Book appointment', width='208', height='41')
-                .global_topNavigation
-                    ul#top
-                        li
-                            a(href='index.html')
-                            | HOME
-                        li
-                            a(href='about-us.html')
-                            | ABOUT US
-                        li
-                            a(href='nhs-private-dentistry.html')
-                            | NHS V PRIVATE DENTISTRY
-                        li
-                            a(href='fee-guide.html')
-                            | FEE GUIDE
+---
+layout: 'default'
+title: 'General Dental care | SE1 Dentist Old Kent Road Dental Studio London SE1'
+banner: 'images/banner_home.jpg'
+description: 'High Quality and affordable NHS and General Dental care in London SE1'
+keywords: 'oral health, general dental care dentist london se1, old kent road, central london denist, city dentist, south east london dentist, southwark dentist, south london dentist, lambeth dentist, se dentist'
+---
+
+table(width='98%', border='0', cellpadding='00', cellspacing='0')
+    tr
+        td(width='61%', rowspan='4', valign='top')
+            h1 General Dental Care
+            p
+                | At Old Kent Road Dental Studio, we believe in providing professional, high
+                | quality dental care for your long term benefit.
+            p
+                | Healthy teeth and gums are the key to a smile that not only looks good, but
+                | makes you feel great too. It’s not just about being comfortable and
+                | avoiding dental problems, it’s also about enjoying total freshness and the
+                | extra confidence, which comes from your ultimate smile.
+            p
+                | Our emphasis at Old Kent Road Dental Studio is to help you achieve,
+                | and maintain, a healthy smile for life.
+            h2 Dental examinations
+            p
+                | With routine dental examinations, regular hygiene treatment and by
+                | looking after your oral health on a daily basis, you can help avoid the
+                | traditional pattern of fillings and extractions.
+            h2 Hygiene treatment
+            p
+                | With hygiene treatment, we will professionally clean your teeth  to remove
+                | unsightly staining caused by tea, coffee or red wine, along with hard
+                | deposits [tartar or calculus] that no amount of brushing will shift. You will
+                | also be advised about brushing and flossing techniques that will help keep
+                | harmful bacteria at bay.
+            h2 Children's dentistry
+            p
+                | We offer a full assessment of your child’s oral health so we can help you to
+                | look after your child’s teeth and prevent dental disease. We believe
+                | dentistry should be a positive experience for all the family and we place
+                | great emphasis in making visits to the dentist relaxed, friendly and fun.
+        td(width='39%', align='right', valign='top')
+            .leftBox_whychoose
+                #head
+                    img(src='images/boxTitle_topTips.jpg', alt='Tips for a healthy smile', width='184', height='18')
+                #mid
                     ul
-                        li GENERAL DENTAL CARE
-                        li
-                            a(href='cosmetic-dentistry.html')
-                            | COSMETIC DENTISTRY
-                        li
-                            a(href='special-offers.html')
-                            | SPECIAL OFFERS
-                        li
-                            a(href='contact-us.html')
-                            | CONTACT US
-            .banner
-                img(src='images/banner_home.jpg', alt='General Dental care')
-            .global_content
-                table(width='98%', border='0', cellpadding='00', cellspacing='0')
-                    tr
-                        td(width='61%', rowspan='4', valign='top')
-                            h1 General Dental Care
-                            //
-                            <img src="images/header_generalDentalCare.jpg" alt="General Dental Care" width="170" height="23" /><br />
-                            p
-                                | At Old Kent Road Dental Studio, we believe in providing professional, high
-                                | quality dental care for your long term benefit.
-                            p
-                                | Healthy teeth and gums are the key to a smile that not only looks good, but
-                                | makes you feel great too. It’s not just about being comfortable and
-                                | avoiding dental problems, it’s also about enjoying total freshness and the
-                                | extra confidence, which comes from your ultimate smile.
-                            p
-                                | Our emphasis at Old Kent Road Dental Studio is to help you achieve,
-                                | and maintain, a healthy smile for life.
-                            //
-                            <p><img src="images/header_generalDentalCare_dentaExaminations.jpg" alt="Dental Examinations" /><br />
-                            h2 Dental examinations
-                            p
-                                | With routine dental examinations, regular hygiene treatment and by
-                                | looking after your oral health on a daily basis, you can help avoid the
-                                | traditional pattern of fillings and extractions.
-                            //
-                            <p><img src="images/header_generalDentalCare_Hygienetreatment.jpg" alt="Hygene Treatment" /><br />
-                            h2 Hygiene treatment
-                            p
-                                | With hygiene treatment, we will professionally clean your teeth  to remove
-                                | unsightly staining caused by tea, coffee or red wine, along with hard
-                                | deposits [tartar or calculus] that no amount of brushing will shift. You will
-                                | also be advised about brushing and flossing techniques that will help keep
-                                | harmful bacteria at bay.
-                            //
-                            <p><img src="images/header_generalDentalCare_ChildrensDentistry.jpg" alt="Childrens Dentistry" /><br />
-                            h2 Children's dentistry
-                            p
-                                | We offer a full assessment of your child’s oral health so we can help you to
-                                | look after your child’s teeth and prevent dental disease. We believe
-                                | dentistry should be a positive experience for all the family and we place
-                                | great emphasis in making visits to the dentist relaxed, friendly and fun.
-                        td(width='39%', align='right', valign='top')
-                            .leftBox_whychoose
-                                #head
-                                    img(src='images/boxTitle_topTips.jpg', alt='Tips for a healthy smile', width='184', height='18')
-                                #mid
-                                    ul
-                                        li Brush for 2 minutes at least twice a day
-                                        li Remember to concentrate on the area where the teeth meet the gums
-                                        li Use dental floss to clean between your teeth
-                                        li Make sure you have regular dental check-ups
-                                        li Avoid frequent consumption of fizzy drinks and sugary foods
-                                #bottom
-                            .green_btn
-                                img(src='images/btn_newPatientExam.jpg', width='149', height='38')
-                            .green_btn
-                                img(src='images/btn_braunToothBrush.jpg', width='186', height='37')
-                            .green_btn2
-                                a(href='teeth-whitening.html')
-                                    img(src='images/btn_Zoom!TeethWhitening.jpg', alt='Zoom 1 Hour teeth Whitening In Surgery')
-                    tr
-                        td(align='right')
-                    tr
-                        td(align='right')
-        .global_footer
-            #address
-            .box_wrap
-                p
-                    b
-                        | Old Kent Road Dental Studio, 268a Old Kent Road, London, SE1 5UB Tel: 020 7701 7878
-                    br
-                    br
-                    span#bottom_link
-                        a(href='general-dental-care.html') General dental care at NHS prices
-                        | |
-                        a(href='cosmetic-dentistry.html') Cosmetic dental treatments to suit all needs and budgets
-                        | |
-                        a(href='contact-us.html') Dentist Old Kent Road
-                        | |
-                        a(href='contact-us.html')
-                            | Dentist London
-                            br
-                            | Bridge
-                        | |
-                        a(href='contact-us.html') Dentist SE1
-                        | |
-                        a(href='contact-us.html') Dentist Southwark
-                        | |
-                        a(href='contact-us.html') Dentist Tower Bridge
-                        | |
-                        a(href='contact-us.html') Dentist Bermondsey
-                        | |
-                        a(href='contact-us.html') Dentist Peckham
-                        | |
-                        a(href='contact-us.html') Dentist Elephant and Castle
-                    br
-                    br
-                    span#rights
-                        | © Copyright 2012 Old Kent Road Dental Studio. All Rights Reserved. | Old Kent Road Dental Studio is a Limited company registered in England and Wales
-                p
-                    a(href='http://www.matthewandpritchard.co.uk/dental_marketing.php') Dental Marketing & Web Design
-                    | by Matthew & Pritchard
-            #more
-                .box_wrap
-                    h1 General and Cosmetic Dentist in Southwark, SE1
-                    p
-                        | It can be difficult to find an understanding and reliable dentist, which is why at Old Kent Road Dental Studio, 268a, Southwark SE1 5UB, we believe in ensuring that visiting a dentist is a reassuring and positive experience. Looking for a  dentist in Southwark SE1or a private dental care at NHS prices or simply a Cosmetic Dentist, Elephant and Castle, London Bridge then look no further than your SE1-Dentist, the Old Kent Road Dental Studio is local to you and can help.
-                    h2 Cosmetic Dentistry in Southwark, London SE1 and surrounding areas:
-                    p
-                        | Old Kent Road Dental Care is a general and cosmetic dentists offering not only Cosmetic Smile Makeovers but also advanced state of the art
-                        a(href='general-dental-care.html') General Dentistry
-                        | in Southwark, London. Old Kent Road Dental Care is a private dentist practice, but with near NHS pricing for this affordable high quality dental service in Elephant and Castle, near London Bridge and the City of London. We offer affordable private dentistry in a calm and friendly environment.
-                    p
-                        | See our before and after cases through the
-                        a(href='cosmetic-dentistry.html') cosmetic dentistry
-                        | section of this website. Looking for experts in cosmetic dentistry at affordable NHS prices? Look no further.
-                        | Whether you live or work in any of the following areas,
-                        a(href='../contact-us.html') SE1, EC2, SE11, SE17
-                        | Old Kent Road Dental Studio will be able to provide the highest standard in affordable general and cosmetic private dental treatments from dental implants, restorative dentistry,
-                        a(href='veneers.html') veneers
-                        | ,
-                        a(href='../inlays-onlays.html') inlays and onlays
-                        | ,
-                        a(href='../white-fillings.html') white fillings
-                        | (replacing silver fillings),
-                        a(href='../teeth-whitening.html') Teeth whitening
-                        | ,
-                        a(href='../all-ceramic-crowns-bridges.html') crowns and bridges
-                        | and
-                        a(href='../dentures.html') dentures
-                        | .
-                    p
-                        | Old Kent Road Dental Studio
-                        a(href='../index.html') (www.se1-dentist.co.uk)
-                        | will provide an efficient, timely service for all of your general private dentistry needs, so if you're working in The City and have a short amount of time in which to visit your dentist, the dental team at se1-dentists will not delay you with long waiting times and provide appointment times to suit you and work around your possible hectic lifestyle.
-                    h2
-                        a(href='../teeth-whitening.html') Tooth Whitening
-                        | at Elephant & Castle, London Bridge and even Canary Wharf:
-                    p
-                        | Located on the famous Old Kent Road in London SE1, the Old Kent Road Dental Studio is within walking distance of the major stations of London Bridge and Elephant & Castle utilizing both national rail and the tube lines; bakerloo, northern and jubilee (we are a Canary Wharf dentist option). With this access from the main train services getting your teeth whitened during even your lunch hour or coming in to pick up your
-                        a(href='../teeth-whitening.html') take home teeth whitening kit
-                        | is certainly an option - we look forward to seeing you.
-                    h2
-                        a(href='../nhs-private-dentistry.html') Private v NHS Dentist London SE1
-                        | :
-                    p
-                        | At
-                        a(href='../index.html') www.se1-dentist.co.uk
-                        | we pride ourselves on being able to offer affordable dental treatments at near NHS prices with a service that is unrivalled in the local area. Please feel free to take a
-                        a(href='../tour-of-our-practice.html') tour of our practice
-                        | and
-                        a(href='../about-us.html') meet the dental team
-                        | at
-                        a(href='../index.html') SE1-dentist.co.uk
-                        | .
-                    p
-                        | For any further questions, please get in touch by phone
-                        a(href='../contact-us.html') 020 7701 7878
-                        | or by
-                        a(href='../booking.html') booking a dental appointment online
-                        | .
-                    p
-                        | We looking forward to hearing from you and making your smile healthier and more attractive with the best in general and cosmetic private dental care.
-            script.
-                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-            script.
-                try {
-                var pageTracker = _gat._getTracker("UA-10327722-1");
-                pageTracker._trackPageview();
-                } catch(err) {}
+                        li Brush for 2 minutes at least twice a day
+                        li Remember to concentrate on the area where the teeth meet the gums
+                        li Use dental floss to clean between your teeth
+                        li Make sure you have regular dental check-ups
+                        li Avoid frequent consumption of fizzy drinks and sugary foods
+                #bottom
+            .green_btn
+                img(src='images/btn_newPatientExam.jpg', width='149', height='38')
+            .green_btn
+                img(src='images/btn_braunToothBrush.jpg', width='186', height='37')
+            .green_btn2
+                a(href='teeth-whitening.html')
+                    img(src='images/btn_Zoom!TeethWhitening.jpg', alt='Zoom 1 Hour teeth Whitening In Surgery')
+    tr
+        td(align='right')
+    tr
+        td(align='right')

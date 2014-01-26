@@ -1,384 +1,225 @@
-!!! transitional
-html(xmlns='http://www.w3.org/1999/xhtml')
-    head
-        meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
-        link(href='css/global.css', rel='stylesheet', type='text/css')
-        script( src='js/email.js')
-        //if IE
-        style.
-            div { behavior: url(includes/iepngfix.htc)}
-        //if gt IE 6
-        link(href='css/ie.css', rel='stylesheet', type='text/css')
-        //if IE 6
-        link(href='css/ie6.css', rel='stylesheet', type='text/css')
-        title Book an Appointment | Dentists in Old Kent Road Dental London SE1
-        meta(name='description', content='Book an appointment with our SE1 dentist via our online booking form')
-        meta(name='keywords', content='book an appointment, tooth, teeth, denstists, dentist london se1, old kent road, elephant & castle, NHS dentistry, Lambeth, dentist south east london')
-    body
-        .layout_top
-        .global_wrap
-            .global_header
-                .logo
-                    a(href='index.thml')
-                        a(href='index.thml')
-                            img(src='images/logo.gif', border='0')
-                .top_right
-                    #phone_no
-                        img(src='images/phone.jpg', alt='call us on:020 7701 7878', width='184', height='46')
-                    br
-                    a(href='booking.html')
-                        img(src='images/btn_bookAppointemt.jpg', alt='Book appointment', width='208', height='41')
-                .global_topNavigation
-                    ul#top
-                        li
-                            a(href='index.thml')
-                            | HOME
-                        li
-                            a(href='about-us.html')
-                            | ABOUT US
-                        li
-                            a(href='nhs-private-dentistry.html')
-                            | NHS V PRIVATE DENTISTRY
-                        li
-                            a(href='fee-guide.html')
-                            | FEE GUIDE
+---
+layout: 'default'
+title: 'Book an Appointment | Dentists in Old Kent Road Dental London SE1'
+banner: 'images/banner_specialOfferce.jpg'
+description: 'Book an appointment with our SE1 dentist via our online booking form'
+keywords: 'book an appointment, tooth, teeth, denstists, dentist london se1, old kent road, elephant & castle, NHS dentistry, Lambeth, dentist south east london'
+---
+
+table(width='98%', border='0', cellpadding='00', cellspacing='0')
+    tr
+        td(width='61%', rowspan='2', valign='top')
+            h1 Book Appointment
+            p
+                | You can use this form to book an appointment. A member of our reception team will contact you as soon as possible to confirm your choice. Alternatively, you can call us on 020 7701 7878.
+            .contactForm
+                form(name='frmFormMail', action='/booking.html', method='post', enctype='multipart/form-data')
+                    input(type='hidden', name='formmail_submit', value='Y')
+                    input(type='hidden', name='esh_formmail_subject', value='Appointment Request')
+                    input(type='hidden', name='esh_formmail_return_subject', value='Appointment Request')
+                    input(type='hidden', name='esh_formmail_return_msg', value='')
+                    table(cellspacing='16', cellpadding='0', border='0')
+                        tr
+                            td.form_field(valign='top', align='right') Name
+                            td(width='10', aligh='right', valign='top')
+                                font(size='2', color='#ff0000') *
+                            td.form_text
+                                input.text_box(type='text', name='Name', value='')
+                        tr
+                            td.form_field(valign='top', align='right') Email
+                            td(width='10', aligh='right', valign='top')
+                                font(size='2', color='#ff0000') *
+                            td.form_text
+                                input.text_box(type='email', name='Email', value='')
+                        tr
+                            td.form_field(valign='top', align='right') Phone
+                            td(width='10', aligh='right', valign='top')
+                                font(size='2', color='#ff0000') *
+                            td.form_text
+                                input.text_box(type='text', name='Phone', value='')
+                        tr
+                            td.form_field(valign='top', align='right') Type of patient
+                            td(width='10', aligh='right', valign='top')
+                                font(size='2', color='#ff0000') *
+                            td.form_text
+                                input(type='radio', name='Type_of_patient', value='New')
+                                | &nbsp;New
+                                br
+                                input(type='radio', name='Type_of_patient', value='Existing')
+                                | &nbsp;Existing
+                                br
+                        tr
+                            td.form_field(valign='top', align='right') Preferred Date
+                            td(width='10', aligh='right', valign='top')
+                                font(size='2', color='#ff0000') *
+                            td.form_text
+                                select.form_text(name='Preferred_Date_MM')
+                                    option(value='') MM
+                                    option(value='01') 01
+                                    option(value='02') 02
+                                    option(value='03') 03
+                                    option(value='04') 04
+                                    option(value='05') 05
+                                    option(value='06') 06
+                                    option(value='07') 07
+                                    option(value='08') 08
+                                    option(value='09') 09
+                                    option(value='10') 10
+                                    option(value='11') 11
+                                    option(value='12') 12
+                                select.form_text(name='Preferred_Date_DD')
+                                    option(value='') DD
+                                    option(value='01') 01
+                                    option(value='02') 02
+                                    option(value='03') 03
+                                    option(value='04') 04
+                                    option(value='05') 05
+                                    option(value='06') 06
+                                    option(value='07') 07
+                                    option(value='08') 08
+                                    option(value='09') 09
+                                    option(value='10') 10
+                                    option(value='11') 11
+                                    option(value='12') 12
+                                    option(value='13') 13
+                                    option(value='14') 14
+                                    option(value='15') 15
+                                    option(value='16') 16
+                                    option(value='17') 17
+                                    option(value='18') 18
+                                    option(value='19') 19
+                                    option(value='20') 20
+                                    option(value='21') 21
+                                    option(value='22') 22
+                                    option(value='23') 23
+                                    option(value='24') 24
+                                    option(value='25') 25
+                                    option(value='26') 26
+                                    option(value='27') 27
+                                    option(value='28') 28
+                                    option(value='29') 29
+                                    option(value='30') 30
+                                    option(value='31') 31
+                                select.form_text(name='Preferred_Date_YYYY')
+                                    option(value='') YYYY
+                                    option(value='2014') 2014
+                                    option(value='2015') 2015
+                                    option(value='2016') 2016
+                                    option(value='2017') 2017
+                        tr
+                            td.form_field(valign='top', align='right') Preferred Time
+                            td(width='10', aligh='right', valign='top')
+                                font(size='2', color='#ff0000') *
+                            td.form_text
+                                select.form_text(name='Preferred_Time_HH')
+                                    option(value='') HH
+                                    option(value='00') 00
+                                    option(value='01') 01
+                                    option(value='02') 02
+                                    option(value='03') 03
+                                    option(value='04') 04
+                                    option(value='05') 05
+                                    option(value='06') 06
+                                    option(value='07') 07
+                                    option(value='08') 08
+                                    option(value='09') 09
+                                    option(value='10') 10
+                                    option(value='11') 11
+                                    option(value='12') 12
+                                    option(value='13') 13
+                                    option(value='14') 14
+                                    option(value='15') 15
+                                    option(value='16') 16
+                                    option(value='17') 17
+                                    option(value='18') 18
+                                    option(value='19') 19
+                                    option(value='20') 20
+                                    option(value='21') 21
+                                    option(value='22') 22
+                                    option(value='23') 23
+                                select.form_text(name='Preferred_Time_MM')
+                                    option(value='') MM
+                                    option(value='00') 00
+                                    option(value='01') 01
+                                    option(value='02') 02
+                                    option(value='03') 03
+                                    option(value='04') 04
+                                    option(value='05') 05
+                                    option(value='06') 06
+                                    option(value='07') 07
+                                    option(value='08') 08
+                                    option(value='09') 09
+                                    option(value='10') 10
+                                    option(value='11') 11
+                                    option(value='12') 12
+                                    option(value='13') 13
+                                    option(value='14') 14
+                                    option(value='15') 15
+                                    option(value='16') 16
+                                    option(value='17') 17
+                                    option(value='18') 18
+                                    option(value='19') 19
+                                    option(value='20') 20
+                                    option(value='21') 21
+                                    option(value='22') 22
+                                    option(value='23') 23
+                                    option(value='24') 24
+                                    option(value='25') 25
+                                    option(value='26') 26
+                                    option(value='27') 27
+                                    option(value='28') 28
+                                    option(value='29') 29
+                                    option(value='30') 30
+                                    option(value='31') 31
+                                    option(value='32') 32
+                                    option(value='33') 33
+                                    option(value='34') 34
+                                    option(value='35') 35
+                                    option(value='36') 36
+                                    option(value='37') 37
+                                    option(value='38') 38
+                                    option(value='39') 39
+                                    option(value='40') 40
+                                    option(value='41') 41
+                                    option(value='42') 42
+                                    option(value='43') 43
+                                    option(value='44') 44
+                                    option(value='45') 45
+                                    option(value='46') 46
+                                    option(value='47') 47
+                                    option(value='48') 48
+                                    option(value='49') 49
+                                    option(value='50') 50
+                                    option(value='51') 51
+                                    option(value='52') 52
+                                    option(value='53') 53
+                                    option(value='54') 54
+                                    option(value='55') 55
+                                    option(value='56') 56
+                                    option(value='57') 57
+                                    option(value='58') 58
+                                    option(value='59') 59
+                        tr
+                            td.form_field(valign='top', align='right') Message
+                            td(width='10', aligh='right', valign='top')
+                            td.form_text
+                                textarea(name='Message', rows='4', cols='25')
+                        tr
+                            td(colspan='3', align='center')
+                                input(type='submit', value='Submit')
+        td(width='39%', align='right', valign='top')
+            .leftBox_whychoose
+                #head
+                    img(src='images/title_whyChoose.jpg', alt='Why Choose us')
+                #mid
                     ul
-                        li
-                            a(href='general-dental-care.html')
-                            | GENERAL DENTAL CARE
-                        li
-                            a(href='cosmetic-dentistry.html')
-                            | COSMETIC DENTISTRY
-                        li
-                            a(href='special-offers.html')
-                            | SPECIAL OFFERS
-                        li
-                            a(href='contact-us.html')
-                            | CONTACT US
-            .banner
-                img(src='images/banner_specialOfferce.jpg', alt='Special Offers')
-            .global_content
-                table(width='98%', border='0', cellpadding='00', cellspacing='0')
-                    tr
-                        td(width='61%', rowspan='2', valign='top')
-                            h1 Book Appointment
-                            p
-                                | You can use this form to book an appointment. A member of our reception team will contact you as soon as possible to confirm your choice. Alternatively, you can call us on 020 7701 7878.
-                            .contactForm
-                                form(name='frmFormMail', action='/booking.html', method='post', enctype='multipart/form-data')
-                                    input(type='hidden', name='formmail_submit', value='Y')
-                                    input(type='hidden', name='esh_formmail_subject', value='Appointment Request')
-                                    input(type='hidden', name='esh_formmail_return_subject', value='Appointment Request')
-                                    input(type='hidden', name='esh_formmail_return_msg', value='')
-                                    table(cellspacing='16', cellpadding='0', border='0')
-                                        tr
-                                            td.form_field(valign='top', align='right') Name
-                                            td(width='10', aligh='right', valign='top')
-                                                font(size='2', color='#ff0000') *
-                                            td.form_text
-                                                input.text_box(type='text', name='Name', value='')
-                                        tr
-                                            td.form_field(valign='top', align='right') Email
-                                            td(width='10', aligh='right', valign='top')
-                                                font(size='2', color='#ff0000') *
-                                            td.form_text
-                                                input.text_box(type='email', name='Email', value='')
-                                        tr
-                                            td.form_field(valign='top', align='right') Phone
-                                            td(width='10', aligh='right', valign='top')
-                                                font(size='2', color='#ff0000') *
-                                            td.form_text
-                                                input.text_box(type='text', name='Phone', value='')
-                                        tr
-                                            td.form_field(valign='top', align='right') Type of patient
-                                            td(width='10', aligh='right', valign='top')
-                                                font(size='2', color='#ff0000') *
-                                            td.form_text
-                                                input(type='radio', name='Type_of_patient', value='New')
-                                                | New
-                                                br
-                                                input(type='radio', name='Type_of_patient', value='Existing')
-                                                | Existing
-                                                br
-                                        tr
-                                            td.form_field(valign='top', align='right') Preferred Date
-                                            td(width='10', aligh='right', valign='top')
-                                                font(size='2', color='#ff0000') *
-                                            td.form_text
-                                                select.form_text(name='Preferred_Date_MM')
-                                                    option(value='') MM
-                                                    option(value='01') 01
-                                                    option(value='02') 02
-                                                    option(value='03') 03
-                                                    option(value='04') 04
-                                                    option(value='05') 05
-                                                    option(value='06') 06
-                                                    option(value='07') 07
-                                                    option(value='08') 08
-                                                    option(value='09') 09
-                                                    option(value='10') 10
-                                                    option(value='11') 11
-                                                    option(value='12') 12
-                                                select.form_text(name='Preferred_Date_DD')
-                                                    option(value='') DD
-                                                    option(value='01') 01
-                                                    option(value='02') 02
-                                                    option(value='03') 03
-                                                    option(value='04') 04
-                                                    option(value='05') 05
-                                                    option(value='06') 06
-                                                    option(value='07') 07
-                                                    option(value='08') 08
-                                                    option(value='09') 09
-                                                    option(value='10') 10
-                                                    option(value='11') 11
-                                                    option(value='12') 12
-                                                    option(value='13') 13
-                                                    option(value='14') 14
-                                                    option(value='15') 15
-                                                    option(value='16') 16
-                                                    option(value='17') 17
-                                                    option(value='18') 18
-                                                    option(value='19') 19
-                                                    option(value='20') 20
-                                                    option(value='21') 21
-                                                    option(value='22') 22
-                                                    option(value='23') 23
-                                                    option(value='24') 24
-                                                    option(value='25') 25
-                                                    option(value='26') 26
-                                                    option(value='27') 27
-                                                    option(value='28') 28
-                                                    option(value='29') 29
-                                                    option(value='30') 30
-                                                    option(value='31') 31
-                                                select.form_text(name='Preferred_Date_YYYY')
-                                                    option(value='') YYYY
-                                                    option(value='2014') 2014
-                                                    option(value='2015') 2015
-                                                    option(value='2016') 2016
-                                                    option(value='2017') 2017
-                                        tr
-                                            td.form_field(valign='top', align='right') Preferred Time
-                                            td(width='10', aligh='right', valign='top')
-                                                font(size='2', color='#ff0000') *
-                                            td.form_text
-                                                select.form_text(name='Preferred_Time_HH')
-                                                    option(value='') HH
-                                                    option(value='00') 00
-                                                    option(value='01') 01
-                                                    option(value='02') 02
-                                                    option(value='03') 03
-                                                    option(value='04') 04
-                                                    option(value='05') 05
-                                                    option(value='06') 06
-                                                    option(value='07') 07
-                                                    option(value='08') 08
-                                                    option(value='09') 09
-                                                    option(value='10') 10
-                                                    option(value='11') 11
-                                                    option(value='12') 12
-                                                    option(value='13') 13
-                                                    option(value='14') 14
-                                                    option(value='15') 15
-                                                    option(value='16') 16
-                                                    option(value='17') 17
-                                                    option(value='18') 18
-                                                    option(value='19') 19
-                                                    option(value='20') 20
-                                                    option(value='21') 21
-                                                    option(value='22') 22
-                                                    option(value='23') 23
-                                                select.form_text(name='Preferred_Time_MM')
-                                                    option(value='') MM
-                                                    option(value='00') 00
-                                                    option(value='01') 01
-                                                    option(value='02') 02
-                                                    option(value='03') 03
-                                                    option(value='04') 04
-                                                    option(value='05') 05
-                                                    option(value='06') 06
-                                                    option(value='07') 07
-                                                    option(value='08') 08
-                                                    option(value='09') 09
-                                                    option(value='10') 10
-                                                    option(value='11') 11
-                                                    option(value='12') 12
-                                                    option(value='13') 13
-                                                    option(value='14') 14
-                                                    option(value='15') 15
-                                                    option(value='16') 16
-                                                    option(value='17') 17
-                                                    option(value='18') 18
-                                                    option(value='19') 19
-                                                    option(value='20') 20
-                                                    option(value='21') 21
-                                                    option(value='22') 22
-                                                    option(value='23') 23
-                                                    option(value='24') 24
-                                                    option(value='25') 25
-                                                    option(value='26') 26
-                                                    option(value='27') 27
-                                                    option(value='28') 28
-                                                    option(value='29') 29
-                                                    option(value='30') 30
-                                                    option(value='31') 31
-                                                    option(value='32') 32
-                                                    option(value='33') 33
-                                                    option(value='34') 34
-                                                    option(value='35') 35
-                                                    option(value='36') 36
-                                                    option(value='37') 37
-                                                    option(value='38') 38
-                                                    option(value='39') 39
-                                                    option(value='40') 40
-                                                    option(value='41') 41
-                                                    option(value='42') 42
-                                                    option(value='43') 43
-                                                    option(value='44') 44
-                                                    option(value='45') 45
-                                                    option(value='46') 46
-                                                    option(value='47') 47
-                                                    option(value='48') 48
-                                                    option(value='49') 49
-                                                    option(value='50') 50
-                                                    option(value='51') 51
-                                                    option(value='52') 52
-                                                    option(value='53') 53
-                                                    option(value='54') 54
-                                                    option(value='55') 55
-                                                    option(value='56') 56
-                                                    option(value='57') 57
-                                                    option(value='58') 58
-                                                    option(value='59') 59
-                                        tr
-                                            td.form_field(valign='top', align='right') Message
-                                            td(width='10', aligh='right', valign='top')
-                                            td.form_text
-                                                textarea(name='Message', rows='4', cols='25')
-                                        tr
-                                            td(colspan='3', align='center')
-                                                input(type='submit', value='Submit')
-                        td(width='39%', align='right', valign='top')
-                            .leftBox_whychoose
-                                #head
-                                    img(src='images/title_whyChoose.jpg', alt='Why Choose us')
-                                #mid
-                                    ul
-                                        li Affordable dental care that won’t break the bank
-                                        li High quality general and cosmetic dentistry
-                                        li Expert, highly experienced dentists
-                                        li Approachable, friendly team
-                                        li Modern, clean facilities
-                                        li Flexible opening times
-                                        li Convenient location
-                                #bottom
-                    tr
-                        td(align='right')
-        .global_footer
-            #address
-            .box_wrap
-                p
-                    b
-                        | Old Kent Road Dental Studio, 268a Old Kent Road, London, SE1 5UB Tel: 020 7701 7878
-                    br
-                    br
-                    span#bottom_link
-                        a(href='general-dental-care.html') General dental care at NHS prices
-                        | |
-                        a(href='cosmetic-dentistry.html') Cosmetic dental treatments to suit all needs and budgets
-                        | |
-                        a(href='contact-us.html') Dentist Old Kent Road
-                        | |
-                        a(href='contact-us.html')
-                            | Dentist London
-                            br
-                            | Bridge
-                        | |
-                        a(href='contact-us.html') Dentist SE1
-                        | |
-                        a(href='contact-us.html') Dentist Southwark
-                        | |
-                        a(href='contact-us.html') Dentist Tower Bridge
-                        | |
-                        a(href='contact-us.html') Dentist Bermondsey
-                        | |
-                        a(href='contact-us.html') Dentist Peckham
-                        | |
-                        a(href='contact-us.html') Dentist Elephant and Castle
-                    br
-                    br
-                    span#rights
-                        | © Copyright 2012 Old Kent Road Dental Studio. All Rights Reserved. | Old Kent Road Dental Studio is a Limited company registered in England and Wales
-                p
-                    a(href='http://www.matthewandpritchard.co.uk/dental_marketing.php') Dental Marketing & Web Design
-                    | by Matthew & Pritchard
-            #more
-                .box_wrap
-                    h1 General and Cosmetic Dentist in Southwark, SE1
-                    p
-                        | It can be difficult to find an understanding and reliable dentist, which is why at Old Kent Road Dental Studio, 268a, Southwark SE1 5UB, we believe in ensuring that visiting a dentist is a reassuring and positive experience. Looking for a  dentist in Southwark SE1or a private dental care at NHS prices or simply a Cosmetic Dentist, Elephant and Castle, London Bridge then look no further than your SE1-Dentist, the Old Kent Road Dental Studio is local to you and can help.
-                    h2 Cosmetic Dentistry in Southwark, London SE1 and surrounding areas:
-                    p
-                        | Old Kent Road Dental Care is a general and cosmetic dentists offering not only Cosmetic Smile Makeovers but also advanced state of the art
-                        a(href='general-dental-care.html') General Dentistry
-                        | in Southwark, London. Old Kent Road Dental Care is a private dentist practice, but with near NHS pricing for this affordable high quality dental service in Elephant and Castle, near London Bridge and the City of London. We offer affordable private dentistry in a calm and friendly environment.
-                    p
-                        | See our before and after cases through the
-                        a(href='cosmetic-dentistry.html') cosmetic dentistry
-                        | section of this website. Looking for experts in cosmetic dentistry at affordable NHS prices? Look no further.
-                        | Whether you live or work in any of the following areas,
-                        a(href='../contact-us.html') SE1, EC2, SE11, SE17
-                        | Old Kent Road Dental Studio will be able to provide the highest standard in affordable general and cosmetic private dental treatments from dental implants, restorative dentistry,
-                        a(href='veneers.html') veneers
-                        | ,
-                        a(href='../inlays-onlays.html') inlays and onlays
-                        | ,
-                        a(href='../white-fillings.html') white fillings
-                        | (replacing silver fillings),
-                        a(href='../teeth-whitening.html') Teeth whitening
-                        | ,
-                        a(href='../all-ceramic-crowns-bridges.html') crowns and bridges
-                        | and
-                        a(href='../dentures.html') dentures
-                        | .
-                    p
-                        | Old Kent Road Dental Studio
-                        a(href='../index.thml') (www.se1-dentist.co.uk)
-                        | will provide an efficient, timely service for all of your general private dentistry needs, so if you're working in The City and have a short amount of time in which to visit your dentist, the dental team at se1-dentists will not delay you with long waiting times and provide appointment times to suit you and work around your possible hectic lifestyle.
-                    h2
-                        a(href='../teeth-whitening.html') Tooth Whitening
-                        | at Elephant & Castle, London Bridge and even Canary Wharf:
-                    p
-                        | Located on the famous Old Kent Road in London SE1, the Old Kent Road Dental Studio is within walking distance of the major stations of London Bridge and Elephant & Castle utilizing both national rail and the tube lines; bakerloo, northern and jubilee (we are a Canary Wharf dentist option). With this access from the main train services getting your teeth whitened during even your lunch hour or coming in to pick up your
-                        a(href='../teeth-whitening.html') take home teeth whitening kit
-                        | is certainly an option - we look forward to seeing you.
-                    h2
-                        a(href='../nhs-private-dentistry.html') Private v NHS Dentist London SE1
-                        | :
-                    p
-                        | At
-                        a(href='../index.thml') www.se1-dentist.co.uk
-                        | we pride ourselves on being able to offer affordable dental treatments at near NHS prices with a service that is unrivalled in the local area. Please feel free to take a
-                        a(href='../tour-of-our-practice.html') tour of our practice
-                        | and
-                        a(href='../about-us.html') meet the dental team
-                        | at
-                        a(href='../index.thml') SE1-dentist.co.uk
-                        | .
-                    p
-                        | For any further questions, please get in touch by phone
-                        a(href='../contact-us.html') 020 7701 7878
-                        | or by
-                        a(href='../booking.html') booking a dental appointment online
-                        | .
-                    p
-                        | We looking forward to hearing from you and making your smile healthier and more attractive with the best in general and cosmetic private dental care.
-            script.
-                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-            script.
-                try {
-                var pageTracker = _gat._getTracker("UA-10327722-1");
-                pageTracker._trackPageview();
-                } catch(err) {}
+                        li Affordable dental care that won’t break the bank
+                        li High quality general and cosmetic dentistry
+                        li Expert, highly experienced dentists
+                        li Approachable, friendly team
+                        li Modern, clean facilities
+                        li Flexible opening times
+                        li Convenient location
+                #bottom
+    tr
+        td(align='right')
