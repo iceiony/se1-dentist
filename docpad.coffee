@@ -89,7 +89,7 @@ docpadConfig = {
                 }
             }
             redirect: '/'
-            to: 'ionita.adri@gmail.com'      
+            to: 'someone@gmail.com'      
             
     # =================================
     # DocPad Events
