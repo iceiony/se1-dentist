@@ -43,7 +43,6 @@
     "docpad-plugin-cleanurls": "~2.6.2"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "~2.5.6",
     "docpad-plugin-marked": "~2.2.0",
     "docpad-plugin-coffeescript": "~2.2.3",
     "docpad-plugin-text": "~2.3.2",
