@@ -91,6 +91,24 @@ docpadConfig = {
             redirect: '/'
             to: 'someone@gmail.com'      
             
+        redirector:
+            redirects:
+                "index.php":"index.html"
+                "booking.php":"booking"
+                "about_us.php":"about-us"
+                "nhs_private_dentistry.php":"nhs-private-dentistry"
+                "free_guide.php":"fee-guide"
+                "genera_dental_care.php":"general-dental-care"
+                "special_offers.php":"special-offers"
+                "contact_us.php":"contact-us"
+                "white_fillings.php":"white-fillings"
+                "teeth_whitening.php":"teeth-whitening"
+                "all_ceramic_crowns_%20bridges.php":"all-ceramic-crowns-bridges"
+                "veneers.php":"veneers"
+                "inlays_onlays.php":"inlays-onlays"
+                "dentures.php":"dentures"
+                "Tour_of_our_Practice.php":"tour-of-our-practice"
+            
     # =================================
     # DocPad Events
     
