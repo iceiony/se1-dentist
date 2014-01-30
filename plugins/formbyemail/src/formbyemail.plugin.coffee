@@ -18,22 +18,13 @@ module.exports = (BasePlugin) ->
 
         receivers.push(enquiry.email, config.to)
         
-        message = util.format('Name: %s\r\n',enquiry.name)
-        message += util.format('Email: %s\r\n', enquiry.email)
-        message += util.format("Type of patient: %s\r\n", enquiry.Type_of_patient)
-        
-        message += util.format('Preffered booking: %d/%d/%d at %d:%d\r\n', 
-          enquiry.Preferred_Date_DD, 
-          enquiry.Preferred_Date_MM , 
-          enquiry.Preferred_Date_YYYY , 
-          enquiry.Preferred_Time_HH , 
-          enquiry.Preferred_Time_MM , 
-        )
-        
-        message += util.format('Message: %s',enquiry.message) 
+        message =  util.format('Name                 %s\r\n',enquiry.name)
+        message += util.format('Email                 %s\r\n', enquiry.email)
+        message += util.format('Phone                %s\r\n', enquiry.phone)
+        message += util.format("Type of patient     %s\r\n", enquiry.type_of_patient)
+        message += util.format('Preffered time      %s\r\n', enquiry.preferred_time)
+        message += util.format('\r\nMessage:\r\n\t%s',enquiry.message) 
           
-        console.log(message);
-
         mailOptions = {
           to: receivers.join(","),
           from: config.from or enquiry.email,
