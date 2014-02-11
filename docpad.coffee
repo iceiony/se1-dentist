@@ -105,6 +105,7 @@ docpadConfig = {
                 "contact_us.php":"contact-us"
                 "white_fillings.php":"white-fillings"
                 "teeth_whitening.php":"teeth-whitening"
+                "teeth_whitening.php%2Bwww%2Bteeth%2Bwhitening%2Blondon%26ct%3Dclnk":"teeth-whitening"
                 "all_ceramic_crowns_%20bridges.php":"all-ceramic-crowns-bridges"
                 "veneers.php":"veneers"
                 "inlays_onlays.php":"inlays-onlays"
