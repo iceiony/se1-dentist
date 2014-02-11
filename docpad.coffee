@@ -1,7 +1,6 @@
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
-
     # =================================
     # Template Data
     # These are variables that will be accessible via our templates
@@ -108,6 +107,7 @@ docpadConfig = {
                 "inlays_onlays.php":"inlays-onlays"
                 "dentures.php":"dentures"
                 "Tour_of_our_Practice.php":"tour-of-our-practice"
+                "cosmetic_dentistry.php": "cosmetic-dentistry"
             
     # =================================
     # DocPad Events
