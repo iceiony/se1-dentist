@@ -78,6 +78,9 @@ docpadConfig = {
     #
     # configure the different plugins of your webstite 
     plugins:
+        update: 
+            path: '/update'
+            
         contactify:
             path: '/book'
             transport: {

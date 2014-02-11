@@ -1,0 +1,37 @@
+{
+    "name": "docpad-plugin-gitupdate",
+    "version": "2.0.0",
+    "description": "DocPad plugin enables updating from a git repo",
+    "homepage": "https://github.com/iceiony/se1-dentist.git",
+    "keywords": [
+        "docpad",
+        "docpad-plugin"
+    ],
+    "author": "Adrian Ionita <iceiony@yahoo.com>",
+    "maintainers": [
+        "Adrian Ionita <iceiony@yahoo.com>"
+    ],
+    "contributors": [
+        "Adrian Ionita <iceiony@yahoo.com>"
+    ],
+    "bugs": {
+        "url": "https://github.com/adrian/se1-dentist/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/adrian/se1-dentist.git"
+    },
+    "engines": {
+        "node": ">=0.8"
+    },
+    "peerDependencies": {
+        "docpad": "6"
+    },
+    "dependencies": {
+        
+    },
+    "devDependencies": {
+        "coffee-script": "~1.6.2"
+    },
+    "main": "./src/gitupdate.plugin.coffee"
+}
