@@ -16,7 +16,7 @@ module.exports = (BasePlugin) ->
         receivers = []
         enquiry = req.body
 
-        receivers.push(enquiry.email, config.to)
+        receivers.push(config.to)
         
         message =  util.format('Name                 %s\r\n',enquiry.name)
         message += util.format('Email                 %s\r\n', enquiry.email)
@@ -27,7 +27,7 @@ module.exports = (BasePlugin) ->
           
         mailOptions = {
           to: receivers.join(","),
-          from: config.from or enquiry.email,
+          from: enquiry.email or "info@se1-dentist.co.uk",
           subject: 'Appointment request ' + enquiry.name + ' <' + enquiry.email + '>',
           text: message,
         }
@@ -35,6 +35,7 @@ module.exports = (BasePlugin) ->
         smtp.sendMail mailOptions, (err, resp) ->
           if(err)
             console.log err
+            console.log("Message failed: " + message );
           else
             console.log("Message sent: " + resp.message);
 
