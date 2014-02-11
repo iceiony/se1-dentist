@@ -84,11 +84,14 @@ docpadConfig = {
                 service: 'Gmail',
                 auth: {
                     user: 'someone@gmail.com',
-                    pass: ''
+                    pass: '*******'
                 }
             }
             redirect: '/'
-            to: 'someone@gmail.com'      
+            to: [
+              'someone@gmail.com'
+              'someone2@gmail.com'
+            ]
             
         redirector:
             redirects:

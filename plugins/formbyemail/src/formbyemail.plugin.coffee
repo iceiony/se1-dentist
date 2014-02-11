@@ -13,10 +13,8 @@ module.exports = (BasePlugin) ->
       {server} = opts
 
       server.post config.path, (req, res) ->
-        receivers = []
+        receivers = config.to
         enquiry = req.body
-
-        receivers.push(config.to)
         
         message =  util.format('Name                 %s\r\n',enquiry.name)
         message += util.format('Email                 %s\r\n', enquiry.email)
