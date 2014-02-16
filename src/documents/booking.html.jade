@@ -14,6 +14,7 @@ table(width='98%', border='0', cellpadding='00', cellspacing='0')
                 | You can use this form to book an appointment. A member of our reception team will contact you as soon as possible to confirm your choice. Alternatively, you can call us on 020 7701 7878.
             .contactForm
                 form(action='/book', method='POST')
+                    input(type='hidden',name='source',value='/booking')
                     table(cellspacing='16', cellpadding='0', border='0')
                         tr
                             td.form_field(valign='top', align='right') Name
