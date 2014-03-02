@@ -10,8 +10,10 @@ table(width='98%', border='0', cellpadding='00', cellspacing='0')
     tr
         td(width='61%', rowspan='2', valign='top')
             h1 Book Appointment
-            p
-                | You can use this form to book an appointment. A member of our reception team will contact you as soon as possible to confirm your choice. Alternatively, you can call us on 020 7701 7878.
+            p.
+                You can use this form to book an appointment. A member of our reception team
+                will contact you as soon as possible to confirm your choice. 
+                Alternatively, you can call us on 020 7701 7878.
             .contactForm
                 form(action='/book', method='POST')
                     input(type='hidden',name='source',value='/booking')
