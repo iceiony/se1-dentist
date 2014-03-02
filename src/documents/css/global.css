@@ -45,6 +45,7 @@ body img{border:none}
 .leftBox_cosmeticDentalTreatments a:link, .leftBox_cosmeticDentalTreatments a:visited{ text-decoration:none; color:#68C9D0}
 .leftBox_cosmeticDentalTreatments a:hover{text-decoration:underline}
 
+/* green btn's with pricing */
 .green_btn{background:transparent url(/images/btn_bgGreen.png) no-repeat scroll 0 0; float:right; font-size:1.5em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
 .green_btn2{background:transparent url(/images/btn_bgGreen3.png) no-repeat scroll 0 0; float:right; font-size:1.5em; height:76px; padding:23px 27px 5px 20px; text-align:center; width:175px; color:#FFFFFF}
 .green_btn2 a {text-decoration: none; color:white}
@@ -52,6 +53,10 @@ body img{border:none}
 .tour_of_practice{background:transparent url(/images/btn_bgGreen.png) no-repeat scroll 0 0; float:right; font-size:1.1em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
 .tour_of_practice a {text-decoration: none; color:white}
 .special_offers_btn {background:transparent url(/images/btn_bgGreen3.png) no-repeat scroll 0 0; float:right; font-size:1.3em; height:76px; padding:15px 27px 5px 20px; text-align:center; width:175px; color:#FFFFFF}
+
+/* special offer page specific */
+.special_offer_box { background:transparent url(/images/offer.gif) no-repeat scroll 0 0;height:146px;width:374px;padding:5px 5px 5px 5px; text-align:center;}
+.special_offer_box h1 {    font-size: 1.6em;    font-weight: bold;    line-height: 1.2em;    margin: 8px;     padding: 0; }
 
 #lessPadding{padding:5px 30px 10px 15px}
 
