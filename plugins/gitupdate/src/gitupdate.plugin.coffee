@@ -19,6 +19,7 @@ module.exports = (BasePlugin) ->
         console.log("Update using: '" + updateCommand + "' " );
         exec( updateCommand , (error,stdout,stderr) ->
           if(error || stderr) 
+            console.log "Failure occured when updating from git"
             console.log JSON.stringify(error)
             console.log JSON.stringify(stderr)
             res.write JSON.stringify(error)
@@ -26,7 +27,21 @@ module.exports = (BasePlugin) ->
 
           console.log "*********************"
           console.log stdout
-          res.end stdout
+          res.write stdout
+
+          docpad.action "generate", (err,result) ->
+            console.log "Regenerating complete"
+            
+            if(err) 
+              console log "Failure occured when regenerating"
+              console.log JSON.stringify(err)
+              res.write JSON.stringify(err)
+            
+            if(result)
+              console.log JSON.stringify(result)
+              res.write JSON.stringify(result)
+            
+            res.end "Completed successfully"
         )
         
       @
