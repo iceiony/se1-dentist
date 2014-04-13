@@ -17,6 +17,7 @@ table(width='98%', border='0', cellpadding='00', cellspacing='0')
             .contactForm
                 form(action='/book', method='POST')
                     input(type='hidden',name='source',value='/booking')
+                    input(type='hidden',name='redirect',value='/booking-confirmed')
                     table(cellspacing='16', cellpadding='0', border='0')
                         tr
                             td.form_field(valign='top', align='right') Name
@@ -85,5 +86,5 @@ script.
     $('#datetimepicker').datetimepicker({
         format:'Y-m-d H:i',
         minTime:"06:00",
-        maxTime:"20:00",
+        maxTime:"20:00"
     });
