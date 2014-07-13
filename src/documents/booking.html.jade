@@ -8,7 +8,7 @@ keywords: 'book an appointment, tooth, teeth, denstists, dentist london se1, old
 
 table(width='98%', border='0', cellpadding='00', cellspacing='0')
     tr
-        td(width='61%', rowspan='2', valign='top')
+        td(width='61%', rowspan='2')
             h1 Book Appointment
             p.
                 You can use this form to book an appointment. A member of our reception team
@@ -20,26 +20,26 @@ table(width='98%', border='0', cellpadding='00', cellspacing='0')
                     input(type='hidden',name='redirect',value='/booking-confirmed')
                     table(cellspacing='16', cellpadding='0', border='0')
                         tr
-                            td.form_field(valign='top', align='right') Name
-                            td(width='10', aligh='right', valign='top')
+                            td.form_field( ) Name
+                            td(width='10', aligh='right')
                                 font(size='2', color='#ff0000') *
                             td.form_text
                                 input.text_box(type='text', name='name', value='')
                         tr
-                            td.form_field(valign='top', align='right') Email
-                            td(width='10', aligh='right', valign='top')
+                            td.form_field( ) Email
+                            td(width='10', aligh='right')
                                 font(size='2', color='#ff0000') *
                             td.form_text
                                 input.text_box(type='email', name='email', value='')
                         tr
-                            td.form_field(valign='top', align='right') Phone
-                            td(width='10', aligh='right', valign='top')
+                            td.form_field( ) Phone
+                            td(width='10', aligh='right')
                                 font(size='2', color='#ff0000') *
                             td.form_text
                                 input.text_box(type='text', name='phone', value='')
                         tr
-                            td.form_field(valign='top', align='right') Type of patient
-                            td(width='10', aligh='right', valign='top')
+                            td.form_field( ) Type of patient
+                            td(width='10', aligh='right')
                                 font(size='2', color='#ff0000') *
                             td.form_text
                                 input(type='radio', name='type_of_patient', value='New')
@@ -49,20 +49,20 @@ table(width='98%', border='0', cellpadding='00', cellspacing='0')
                                 | &nbsp;Existing
                                 br
                         tr
-                            td.form_field(valign='top', align='right') Preferred Time
-                            td(width='10', aligh='right', valign='top')
+                            td.form_field( ) Preferred Time
+                            td(width='10', aligh='right')
                                 font(size='2', color='#ff0000') *
                             td.form_text
                                 <input id="datetimepicker" name="preferred_time" type="text" >
                         tr
-                            td.form_field(valign='top', align='right') Message
-                            td(width='10', aligh='right', valign='top')
+                            td.form_field( ) Message
+                            td(width='10', aligh='right')
                             td.form_text
                                 textarea(name='message', rows='4', cols='25')
                         tr
                             td(colspan='3', align='center')
                                 input(type='submit', value='Submit')
-        td(width='39%', align='right', valign='top')
+        td(width='39%', )
             .leftBox_whychoose
                 #head
                     img(src='/images/title_whyChoose.jpg', alt='Why Choose us')
@@ -77,7 +77,7 @@ table(width='98%', border='0', cellpadding='00', cellspacing='0')
                         li Convenient location
                 #bottom
     tr
-        td(align='right')
+        td()
 
 link(href='/vendor/jquery.datetimepicker.css', rel='stylesheet', type='text/css')
 script(src='/vendor/jquery.js')

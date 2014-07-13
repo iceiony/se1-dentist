@@ -12,7 +12,7 @@ body img{border:none}
 .logo{width:264px; margin-left:25px; float:left}
 .top_right{float:right; margin-right:25px; font-weight:bold; color:#A8A9AD; font-size:1.7em; width:220px; margin-bottom:25px; color:#A8A9AD}
 
-
+td {vertical-align: top}
 /*top navgation*/
 .global_topNavigation{clear:both}
 .global_topNavigation ul{padding:3px 0 0 0; margin:0; display:block; height:18px; font-size:1.1em; background:url(/images/bg_secondMenu.gif) repeat-x}
@@ -31,7 +31,7 @@ body img{border:none}
 .global_content{ padding:30px; min-height:400px; font-weight:500; font-size:1.2em; color:#6D6E71;}
 
 
-.leftBox_whychoose{width:216px; text-align:left}
+.leftBox_whychoose{width:216px; text-align:left;float:right}
 .leftBox_whychoose #head{background:url(/images/whychoose_head.gif) no-repeat; color:white; font-size:1.25em; font-weight:bold; height:28px; padding-top:12px; text-align:center;}
 .leftBox_whychoose #mid{ border:2px solid #68C9D0; border-bottom:none; border-top:none; background-color:#FFFFFF; color:#68C9D0}
 .leftBox_whychoose #bottom{height:30px; background:url(/images/whychoose_bottom.gif) no-repeat;}

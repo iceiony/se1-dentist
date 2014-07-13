@@ -57,8 +57,8 @@ head
       .banner
           img(src!= document.banner ,alt="Banner",width="773",height="239")
 
-      .global_content!= content
-
+      .global_content!= editable({attribute:'content',value:content})
+      
     .global_footer
       #address
       .box_wrap
@@ -131,3 +131,5 @@ head
         var pageTracker = _gat._getTracker("UA-10327722-1");
         pageTracker._trackPageview();
         } catch(err) {}
+      script(src="/inlinegui/script.js")
+      link(href='/inlinegui/style.css', rel='stylesheet', type='text/css')
