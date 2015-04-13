@@ -78,6 +78,12 @@ docpadConfig = {
     #
     # configure the different plugins of your webstite 
     plugins:
+        restapi:
+            securityToken: 'blah'
+            
+        inlinegui:
+            url: 'http://webwrite.github.io/inlinegui/'
+
         update: 
             path: '/update'
             
