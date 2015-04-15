@@ -13,6 +13,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
     //if IE 6
       link(href='css/ie6.css', rel='stylesheet', type='text/css')
     title= getPreparedTitle()
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='DC.title', content='Dentist London SE1 | Dentist Elephant and Castle | NHS Dentist Southwark')
     meta(name='geo.region', content='GB-SWK')
     meta(name='geo.placename', content='London')
@@ -27,14 +28,16 @@ html(xmlns='http://www.w3.org/1999/xhtml')
     .global_wrap
       .global_header
         .logo
-          a(href='/')
-            img(src='/images/logo.gif', border='0')
+          .logo_wrapper
+            a(href='/')
+              img(src='/images/logo.gif', border='0')
         .top_right
           #phone_no
             img(src='/images/phone.jpg', alt='call us on:020 7701 7878', width='184', height='46')
           br
-          a(href='/booking')
-            img(src='/images/btn_bookAppointemt.jpg', alt='Book appointment', width='208', height='41')
+          .btn_bookAppt
+            a(href='/booking')
+              img(src='/images/btn_bookAppointemt.jpg', alt='Book appointment', width='208', height='41')
         .global_topNavigation
           ul#top
             li
@@ -55,7 +58,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
             li
               a(href='/contact-us') CONTACT US
       .banner
-          img(src!= document.banner ,alt="Banner",width="773",height="239")
+          img(src!= document.banner ,alt="Banner",width="100%")
 
       .global_content!= editable({attribute:'content',value:content})
       
