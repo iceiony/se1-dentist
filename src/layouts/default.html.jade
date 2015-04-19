@@ -5,6 +5,8 @@ html(xmlns='http://www.w3.org/1999/xhtml')
     link(href='/css/global.css', rel='stylesheet', type='text/css')
     script(src='/js/email.js')
     script(src='/js/AC_RunActiveContent.js', type='text/javascript')
+    script(src='/js/jquery.js')
+    script(src='/js/hamburger-menu.js', type='text/javascript')
     //if IE
       style.
         div { behavior: url(includes/iepngfix.htc)}
@@ -57,6 +59,33 @@ html(xmlns='http://www.w3.org/1999/xhtml')
               a(href='/special-offers') SPECIAL OFFERS
             li
               a(href='/contact-us') CONTACT US
+        .mobile-nav-wrapper
+          .mobile-nav
+                #menu-btn.menu-btn
+                  .menu-btn-text MENU
+                  .menu-btn-box
+                  span
+                  span
+                  span
+                .responsive-menu
+                  ul#top
+                    li
+                      a(href="/") HOME
+                    li
+                      a(href='/about-us') ABOUT US
+                    li
+                      a(href='/nhs-private-dentistry') NHS V PRIVATE DENTISTRY
+                    li
+                      a(href='/fee-guide') FEE GUIDE
+                  ul
+                    li
+                      a(href='/general-dental-care') GENERAL DENTAL CARE
+                    li
+                      a(href='/cosmetic-dentistry') COSMETIC DENTISTRY
+                    li
+                      a(href='/special-offers') SPECIAL OFFERS
+                    li
+                      a(href='/contact-us') CONTACT US
       .banner
           img(src!= document.banner ,alt="Banner",width="100%")
 
