@@ -173,7 +173,7 @@ td {vertical-align: top}
 #more h2 {text-indent: 0;}
 
 /*contact form*/
-.contactForm{ width:400px; border:1px #B42D7E solid; margin-top:20px; padding:10px;}
+.contactForm{ width:100%; border:1px #B42D7E solid; margin-top:20px; padding:10px; margin-bottom: 40px;}
 .form_error {background:#68C9D0; padding:5px; color:#fff}
 .emailGreen_btn a:link{background:transparent url(/images/btn_bgContactGreen.png) no-repeat scroll 0 0; float:right; font-size:1.4em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#68C9D0}
 .emailGreen_btn span{font-size:2.2px;}
@@ -274,14 +274,40 @@ h4, h5, h6		{ font-size: 1em; line-height: 1.5em; margin-bottom: 0.5em }
 		font-size: 1.8em;
 		line-height: 140%;
 	}
+	.content li{
+		font-size: 1.4em;
+  		line-height: 140%;
+	}
 	.global_content p{
 		font-size: 1.4em;
   		line-height: 140%;
+	}
+	.content div{
+		font-size: 1.4em;
+		line-height: 140%;
+	}
+	.content h2{
+		font-size: 1.6em;
+		line-height: 150%;
+	}
+	.content table{
+		margin: 0 auto;
+	}
+	.content tr{
+		height: 48px;
+		line-height: 48px;
 	}
 	#mid ul li{
 	  	font-size: 1.4em;
 	  	line-height: 140%;
 	}
+	#mid td{
+		height: 48px;
+		line-height: 48px;
+	}
+/*	#mid a{
+		font-size: 1.4em;
+	}*/
 	.box_wrap p, .box_wrap span{
 		font-size: 1.1em !important;
 		line-height: 140%;
