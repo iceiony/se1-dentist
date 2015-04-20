@@ -6,33 +6,30 @@ description: 'Book an appointment with our SE1 dentist via our online booking fo
 keywords: 'book an appointment, tooth, teeth, denstists, dentist london se1, old kent road, elephant & castle, NHS dentistry, Lambeth, dentist south east london'
 ---
 
-table(width='98%', border='0', cellpadding='00', cellspacing='0')
-    tr
-        td(width='61%', rowspan='2')
-            h1 Book Appointment
-            p.
-                You can use this form to book an appointment. A member of our reception team
-                will contact you as soon as possible to confirm your choice. 
-                Alternatively, you can call us on 020 7701 7878.
-            .contactForm
-                form(action='/book', method='POST')
-                    |Booking Confirmed. We'll give you a call later.
-        td(width='39%', )
-            .leftBox_whychoose
-                #head
-                    img(src='/images/title_whyChoose.jpg', alt='Why Choose us')
-                #mid
-                    ul
-                        li Affordable dental care that won’t break the bank
-                        li High quality general and cosmetic dentistry
-                        li Expert, highly experienced dentists
-                        li Approachable, friendly team
-                        li Modern, clean facilities
-                        li Flexible opening times
-                        li Convenient location
-                #bottom
-    tr
-        td()
+.container
+    .content
+        h1 Book Appointment
+        p.
+            You can use this form to book an appointment. A member of our reception team
+            will contact you as soon as possible to confirm your choice. 
+            Alternatively, you can call us on 020 7701 7878.
+        .contactForm
+            form(action='/book', method='POST')
+                |Booking Confirmed. We'll give you a call later.
+    .sidebar
+        .leftBox_whychoose
+            #head
+                img(src='/images/title_whyChoose.jpg', alt='Why Choose us')
+            #mid
+                ul
+                    li Affordable dental care that won’t break the bank
+                    li High quality general and cosmetic dentistry
+                    li Expert, highly experienced dentists
+                    li Approachable, friendly team
+                    li Modern, clean facilities
+                    li Flexible opening times
+                    li Convenient location
+            #bottom
 
 link(href='/vendor/jquery.datetimepicker.css', rel='stylesheet', type='text/css')
 script(src='/vendor/jquery.js')

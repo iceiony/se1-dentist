@@ -6,30 +6,27 @@ description: 'Old Kent Road Dental Studio - please feel free to take our practic
 keywords: 'dental, practice, tour'
 ---
 
-table(width='98%', border='0', cellpadding='00', cellspacing='0')
-    tr
-        td(width='61%', rowspan='2')
-            h1 Tour of our Dental Practice
-            script.
-                AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','355','height','350','src','/swf/tour','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','/swf/tour' ); //end AC code
-            noscript
-                object(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0', width='355', height='350')
-                    param(name='movie', value='/swf/tour.swf')
-                    param(name='quality', value='high')
-                    embed(src='/swf/tour.swf', quality='high', pluginspage='http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash', type='application/x-shockwave-flash', width='355', height='350')
-        td(width='39%', )
-            .leftBox_whychoose
-                #head
-                    img(src='/images/title_whyChoose.jpg', alt='Why Choose us')
-                #mid
-                    ul
-                        li Affordable dental care that won’t break the bank
-                        li High quality general and cosmetic dentistry
-                        li Expert, highly experienced dentists
-                        li Approachable, friendly team
-                        li Modern, clean facilities
-                        li Flexible opening times
-                        li Convenient location
-                #bottom
-    tr
-        td()
+.container
+    .content
+        h1 Tour of our Dental Practice
+        script.
+            AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','100%','height','350','src','/swf/tour','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','/swf/tour' ); //end AC code
+        noscript
+            object(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0', width='100%', height='350')
+                param(name='movie', value='/swf/tour.swf')
+                param(name='quality', value='high')
+                embed(src='/swf/tour.swf', quality='high', pluginspage='http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash', type='application/x-shockwave-flash', width='355', height='350')
+    .sidebar
+        .leftBox_whychoose
+            #head
+                img(src='/images/title_whyChoose.jpg', alt='Why Choose us')
+            #mid
+                ul
+                    li Affordable dental care that won’t break the bank
+                    li High quality general and cosmetic dentistry
+                    li Expert, highly experienced dentists
+                    li Approachable, friendly team
+                    li Modern, clean facilities
+                    li Flexible opening times
+                    li Convenient location
+            #bottom

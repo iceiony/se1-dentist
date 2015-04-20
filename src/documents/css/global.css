@@ -1,16 +1,21 @@
 /* CSS Document */
 
-body{padding:0; margin:0; font-size:10px; font-family: Arial, sans-serif; color:#B42D7E; word-spacing:.18em; line-height:1.7em;}
+body{padding:0; margin:0; font-size:0.625em; font-family: Arial, sans-serif; color:#B42D7E; word-spacing:.18em; line-height:1.7em;}
 .clear{clear:both}
 body img{border:none}
 /*Layout*/
-.layout_top{background:url(/images/bg_top.gif) no-repeat 0px 0px; width:776px; height:35px; display:block; margin-left:auto; margin-right:auto; margin-top:65px; padding:0 12px}
-.global_wrap{width:776px; background:url(/images/bg_global.gif) repeat-y; padding:0 12px; margin-left:auto; margin-right:auto;}
-.global_header{ background-color:#FFFFFF; width:773px}
+.wrapper{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 776px;
+}
+.layout_top{background:url(/images/bg_top.gif) no-repeat 0px 0px; width:100%; max-width:776px; height:35px; display:block; margin-left:auto; margin-right:auto; margin-top:65px; padding:0 12px; margin-left: -12px;}
+.global_wrap{width:100%; max-width:776px; background:url(/images/bg_global.gif) repeat-y; padding:0 12px; float: left; margin-left: -12px;}
+.global_header{ background-color:#FFFFFF; width:100%; max-width:773px}
 
 /*Header*/
-.logo{width:264px; margin-left:25px; float:left}
-.top_right{float:right; margin-right:25px; font-weight:bold; color:#A8A9AD; font-size:1.7em; width:220px; margin-bottom:25px; color:#A8A9AD}
+.logo{width:178px; margin-top: 10px; margin-left: 56px; float:left}
+.top_right{float:right; margin-right:25px; font-weight:bold; color:#A8A9AD; font-size:1.9em; width:220px; margin-bottom:25px; color:#A8A9AD}
 
 td {vertical-align: top}
 /*top navgation*/
@@ -24,15 +29,90 @@ td {vertical-align: top}
 
 .global_current{background:#666666; color:#FFFFFF}
 
-/*mid contents*/
-.banner{width:773px; height:239px;}
-.global_content h1{font-size:1.6em; font-weight: 500; line-height:1.3em; margin-bottom:18px}
-.global_content h2{font-size:1.25em; font-weight: 400; line-height:1.25em;}
-.global_content{ padding:30px; min-height:400px; font-weight:500; font-size:1.2em; color:#6D6E71;}
+/* hamburger menu */
+.mobile-nav-wrapper{
+  	width: 100%;
+  	display: none;
+  	float: left;
+	cursor: pointer;
+	background:url(/images/bg_firstMenu.gif);
+	background-size: 100% 100%;
+	padding: 10px 0 0;
+}
+.menu-btn{
+	padding: 2px 25px 10px;
+}
+.menu-btn-text{
+	float: left;
+	margin-left: 30px;
+	margin-top: 2px;
+	font-size: 1.7em;
+	font-weight: normal;
+	color: #ffffff;
+	cursor: pointer;
+}
+.menu-btn-box {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 1.125em;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+ 
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 2px;
+	margin: 4px 0;
+	background: #ffffff;
+	z-index: 99;
+	cursor: pointer;
+}
+ 
+.responsive-menu{
+	display: none;
+}
 
+.responsive-menu ul#top{
+	background:url(/images/bg_firstMenu.gif);
+	background-size: 100% 100%;
+}
+.responsive-menu ul{padding:3px 0 0 0; margin:0; display:block; height:200px; font-size:1.6em; background:url(/images/bg_secondMenu.gif); background-size: 100% 100%;}
+.responsive-menu #top{background:url(/images/bg_firstMenu.gif); background-size: 100% 100%;}
+.responsive-menu ul li{display:block; width:100%; text-align:center; float:left; color:#CCCCCC;}
+
+.responsive-menu a:link,.responsive-menu a:visited{color:white; text-decoration:none;}
+.responsive-menu a:hover{color:#CCCCCC} 
+
+.responsive-menu a {  
+	height: 48px;
+	line-height: 48px;
+  	float: left;
+  	width: 100%;
+  	text-align: center;
+  }
+ 
+.expand {
+	display: block !important; 
+}
+
+/*mid contents*/
+.banner{width:100%; max-width:773px;}
+.global_content h1{font-size:1.6em; font-weight: 500; line-height:1.3em; margin-bottom:18px}
+.global_content h2{font-size:1.3em; font-weight: 400; line-height:1.25em;}
+.global_content{ padding:30px; min-height:440px; font-weight:500; font-size:1.2em; color:#6D6E71;}
+
+.container{ width: 100%; float: left;}
+.content{width: 61%; float:left;}
+.sidebar{width: 31%; float: left; margin-left: 55px;}
 
 .leftBox_whychoose{width:216px; text-align:left;float:right}
-.leftBox_whychoose #head{background:url(/images/whychoose_head.gif) no-repeat; color:white; font-size:1.25em; font-weight:bold; height:28px; padding-top:12px; text-align:center;}
+.leftBox_whychoose #head{background:url(/images/whychoose_head.gif) no-repeat; color:white; font-size:1.5em; font-weight:bold; height:28px; padding-top:12px; text-align:center;}
 .leftBox_whychoose #mid{ border:2px solid #68C9D0; border-bottom:none; border-top:none; background-color:#FFFFFF; color:#68C9D0}
 .leftBox_whychoose #bottom{height:30px; background:url(/images/whychoose_bottom.gif) no-repeat;}
 .leftBox_whychoose ul{padding:15px; margin:0; margin-left:16px; padding-bottom:0}
@@ -46,17 +126,17 @@ td {vertical-align: top}
 .leftBox_cosmeticDentalTreatments a:hover{text-decoration:underline}
 
 /* green btn's with pricing */
-.green_btn{background:transparent url(/images/btn_bgGreen.png) no-repeat scroll 0 0; float:right; font-size:1.5em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
-.green_btn2{background:transparent url(/images/btn_bgGreen3.png) no-repeat scroll 0 0; float:right; font-size:1.5em; height:76px; padding:23px 27px 5px 20px; text-align:center; width:175px; color:#FFFFFF}
+.green_btn{background:transparent url(/images/btn_bgGreen.png) no-repeat scroll 0 0; float:right; font-size:1.4em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
+.green_btn2{background:transparent url(/images/btn_bgGreen3.png) no-repeat scroll 0 0; float:right; font-size:1.4em; height:76px; padding:23px 27px 5px 20px; text-align:center; width:175px; color:#FFFFFF}
 .green_btn2 a {text-decoration: none; color:white}
 
-.tour_of_practice{background:transparent url(/images/btn_bgGreen.png) no-repeat scroll 0 0; float:right; font-size:1.1em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF}
-.tour_of_practice a {text-decoration: none; color:white}
-.special_offers_btn {background:transparent url(/images/btn_bgGreen3.png) no-repeat scroll 0 0; float:right; font-size:1.3em; height:76px; padding:15px 27px 5px 20px; text-align:center; width:175px; color:#FFFFFF}
+.tour_of_practice{background:transparent url(/images/btn_bgGreen.png) no-repeat scroll 0 0; float:right; font-size:1.4em; height:67px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#FFFFFF; background-size: 100% 100%;}
+.tour_of_practice a {text-decoration: none; color:white; width: 100%; float: left;}
+.special_offers_btn {background:transparent url(/images/btn_bgGreen3.png) no-repeat scroll 0 0; float:right; font-size:1.5em; height:76px; padding:15px 27px 5px 20px; text-align:center; width:175px; color:#FFFFFF}
 
 /* special offer page specific */
-.special_offer_box { background:transparent url(/images/offer.gif) no-repeat scroll 0 0;height:146px;width:374px;padding:5px 5px 5px 5px; text-align:center;}
-.special_offer_box h1 {    font-size: 1.6em;    font-weight: bold;    line-height: 1.2em;    margin: 8px;     padding: 0; }
+.special_offer_box { background:transparent url(/images/offer.gif) no-repeat scroll 0 0;height:146px; background-size: 100% 100%; padding:5px 5px 5px 5px; text-align:center;}
+.special_offer_box h1 {    font-size: 1.8em;    font-weight: bold;    line-height: 1.2em;    margin: 8px;     padding: 0; }
 
 #lessPadding{padding:5px 30px 10px 15px}
 
@@ -78,16 +158,16 @@ td {vertical-align: top}
 .content_right{}
 
 /*footer*/
-.global_footer{ background:url(/images/bg_bottom.gif) no-repeat; width:776px; padding:0 12px; margin:0 auto; height:40px; color:#7DC567; font-size:1.2em; text-align:center}
+.global_footer{ background:url(/images/bg_bottom.gif) no-repeat; width:100%; max-width:776px; padding:0 12px; margin:0; float: left; height:40px; color:#7DC567; font-size:1.2em; text-align:center; margin-left: -12px;}
 .global_footer #address{padding:40px 20px 10px 20px;}
 .global_footer #address #address_spacer{padding:0 8px}
-.global_footer .box_wrap{ padding:0 35px; padding-bottom:10px; color:#B42D7E; font-size:.9em; word-spacing:.2em}
+.global_footer .box_wrap{ padding:0 35px; padding-bottom:10px; color:#B42D7E; font-size:0.9em; word-spacing:.2em}
 .global_footer .box_wrap a:link, .global_footer .box_wrap a:visited{color:#B42D7E; text-decoration:none}
 .global_footer .box_wrap a:hover{text-decoration:underline}
 .global_footer .box_wrap #footer_box{ display:block; width:180px; height:95px; padding:32px 15px; float:left; margin-top:25px; background:url(/images/footer_box.gif) no-repeat 5px 10px}
 
 .global_footer .box_wrap #bottom_link{color:#6D6E71}
-.global_footer .box_wrap #rights{color:#808184; font-size:.85em}
+.global_footer .box_wrap #rights{color:#808184; font-size:1em}
 #more{margin: 300px auto 10px auto; text-align:left; color:#808184}
 #more h1 {text-indent: 0;}
 #more h2 {text-indent: 0;}
@@ -95,8 +175,8 @@ td {vertical-align: top}
 /*contact form*/
 .contactForm{ width:400px; border:1px #B42D7E solid; margin-top:20px; padding:10px;}
 .form_error {background:#68C9D0; padding:5px; color:#fff}
-.emailGreen_btn a:link{background:transparent url(/images/btn_bgContactGreen.png) no-repeat scroll 0 0; float:right; font-size:1.2em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#68C9D0}
-.emailGreen_btn span{font-size:2px;}
+.emailGreen_btn a:link{background:transparent url(/images/btn_bgContactGreen.png) no-repeat scroll 0 0; float:right; font-size:1.4em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#68C9D0}
+.emailGreen_btn span{font-size:2.2px;}
 
 /*-------------- Common ---------------- */
 
@@ -106,8 +186,112 @@ h4
  				{ font-weight: normal; color: #b42f7d /*dark blue*/;margin:0px;  }
 				
 h1 				{ font-size: 1.2em; line-height: 1.2em; margin-bottom: 0.5em; } 
-h2 				{ font-size: 1.0em; line-height: 1.0em; margin-bottom: 0.5em; }
+h2 				{ font-size: 1em; line-height: 1.0em; margin-bottom: 0.5em; }
 h3, th				{ font-size: 1.2em; line-height: 1.2857em; margin-bottom: .5em }
 h4, h5, h6		{ font-size: 1em; line-height: 1.5em; margin-bottom: 0.5em }
 
 #slideShow      {width: 360px !important; height: 384px !important; }
+
+@media screen and (max-width: 600px) {
+	a{
+		height: 48px;
+	}
+	.global_wrap, .global_footer, .layout_top{
+		margin-left: 0px;
+	}
+	.mobile-nav-wrapper{
+	  display: block;
+	}
+	.global_topNavigation{
+		display: none;
+	}
+	.logo{
+		width:100%;
+		margin-left: 0;
+	}
+	.logo_wrapper{
+		width:178px;
+		margin-top: 20px;
+		margin-left: 112px;
+		margin:0 auto;
+	}
+	.logo img {
+		width: 100%;
+	}
+	.btn_bookAppt{
+		width: 208px;
+		margin: 0 auto;
+	}
+	.btn_bookAppt a{
+		float:left;
+		height: 48px;
+	}
+	#phone_no{
+		width: 184px;
+		margin: 0 auto;
+	}
+	.top_right{
+		width: 100%;
+		margin-right: 0;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.layout_top{
+		display: none;
+	}
+	.global_wrap{
+		padding-top: 20px;
+	}
+	.global_footer, .global_wrap{
+		background: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.content{
+		width: 100%;
+	}
+	.sidebar{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.leftBox_whychoose, .green_btn, .green_btn2, .tour_of_practice, .leftBox_cosmeticDentalTreatments, .special_offers_btn, .leftBox_script{
+		float: none;
+		margin:0 auto;
+	}
+	.green_btn2 a{
+		float:left;
+	}
+	.leftBox_script{
+		width: 212px;
+		height: 128px;
+	}
+	.special_offer_box{
+		height: 190px;
+	}
+	.content h1{
+		font-size: 1.8em;
+		line-height: 140%;
+	}
+	.global_content p{
+		font-size: 1.4em;
+  		line-height: 140%;
+	}
+	#mid ul li{
+	  	font-size: 1.4em;
+	  	line-height: 140%;
+	}
+	.box_wrap p, .box_wrap span{
+		font-size: 1.1em !important;
+		line-height: 140%;
+	}	
+	.box_wrap h1{
+		font-size: 1.3em !important;
+		line-height: 140%;
+	}
+	.box_wrap h2{
+		font-size: 1.2em !important;
+		line-height: 140%;
+	}
+}	
