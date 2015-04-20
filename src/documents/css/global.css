@@ -263,6 +263,9 @@ h4, h5, h6		{ font-size: 1em; line-height: 1.5em; margin-bottom: 0.5em }
 	.green_btn2 a{
 		float:left;
 	}
+	.tour_of_practice{
+		height: 89px;
+	}
 	.leftBox_script{
 		width: 212px;
 		height: 128px;
@@ -331,4 +334,5 @@ h4, h5, h6		{ font-size: 1em; line-height: 1.5em; margin-bottom: 0.5em }
 		width: 100%;
 		font-size: 1.3em;
 	}
+
 }	
