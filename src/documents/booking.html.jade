@@ -6,78 +6,75 @@ description: 'Book an appointment with our SE1 dentist via our online booking fo
 keywords: 'book an appointment, tooth, teeth, denstists, dentist london se1, old kent road, elephant & castle, NHS dentistry, Lambeth, dentist south east london'
 ---
 
-table(width='98%', border='0', cellpadding='00', cellspacing='0')
-    tr
-        td(width='61%', rowspan='2')
-            h1 Book Appointment
-            p.
-                You can use this form to book an appointment. A member of our reception team
-                will contact you as soon as possible to confirm your choice. 
-                Alternatively, you can call us on 020 7701 7878.
-            .contactForm
-                form(action='/book', method='POST')
-                    input(type='hidden',name='source',value='/booking')
-                    input(type='hidden',name='redirect',value='/booking-confirmed')
-                    table(cellspacing='16', cellpadding='0', border='0')
-                        tr
-                            td.form_field( ) Name
-                            td(width='10', aligh='right')
-                                font(size='2', color='#ff0000') *
-                            td.form_text
-                                input.text_box(type='text', name='name', value='')
-                        tr
-                            td.form_field( ) Email
-                            td(width='10', aligh='right')
-                                font(size='2', color='#ff0000') *
-                            td.form_text
-                                input.text_box(type='email', name='email', value='')
-                        tr
-                            td.form_field( ) Phone
-                            td(width='10', aligh='right')
-                                font(size='2', color='#ff0000') *
-                            td.form_text
-                                input.text_box(type='text', name='phone', value='')
-                        tr
-                            td.form_field( ) Type of patient
-                            td(width='10', aligh='right')
-                                font(size='2', color='#ff0000') *
-                            td.form_text
-                                input(type='radio', name='type_of_patient', value='New')
-                                | &nbsp;New
-                                br
-                                input(type='radio', name='type_of_patient', value='Existing')
-                                | &nbsp;Existing
-                                br
-                        tr
-                            td.form_field( ) Preferred Time
-                            td(width='10', aligh='right')
-                                font(size='2', color='#ff0000') *
-                            td.form_text
-                                <input id="datetimepicker" name="preferred_time" type="text" >
-                        tr
-                            td.form_field( ) Message
-                            td(width='10', aligh='right')
-                            td.form_text
-                                textarea(name='message', rows='4', cols='25')
-                        tr
-                            td(colspan='3', align='center')
-                                input(type='submit', value='Submit')
-        td(width='39%', )
-            .leftBox_whychoose
-                #head
-                    img(src='/images/title_whyChoose.jpg', alt='Why Choose us')
-                #mid
-                    ul
-                        li Affordable dental care that won’t break the bank
-                        li High quality general and cosmetic dentistry
-                        li Expert, highly experienced dentists
-                        li Approachable, friendly team
-                        li Modern, clean facilities
-                        li Flexible opening times
-                        li Convenient location
-                #bottom
-    tr
-        td()
+.container
+    .content
+        h1 Book Appointment
+        p.
+            You can use this form to book an appointment. A member of our reception team
+            will contact you as soon as possible to confirm your choice. 
+            Alternatively, you can call us on 020 7701 7878.
+        .contactForm
+            form(action='/book', method='POST')
+                input(type='hidden',name='source',value='/booking')
+                input(type='hidden',name='redirect',value='/booking-confirmed')
+                table(cellspacing='16', cellpadding='0', border='0')
+                    tr
+                        td.form_field( ) Name
+                        td(width='10', aligh='right')
+                            font(size='2', color='#ff0000') *
+                        td.form_text
+                            input.text_box(type='text', name='name', value='')
+                    tr
+                        td.form_field( ) Email
+                        td(width='10', aligh='right')
+                            font(size='2', color='#ff0000') *
+                        td.form_text
+                            input.text_box(type='email', name='email', value='')
+                    tr
+                        td.form_field( ) Phone
+                        td(width='10', aligh='right')
+                            font(size='2', color='#ff0000') *
+                        td.form_text
+                            input.text_box(type='text', name='phone', value='')
+                    tr
+                        td.form_field( ) Type of patient
+                        td(width='10', aligh='right')
+                            font(size='2', color='#ff0000') *
+                        td.form_text
+                            input(type='radio', name='type_of_patient', value='New')
+                            | &nbsp;New
+                            br
+                            input(type='radio', name='type_of_patient', value='Existing')
+                            | &nbsp;Existing
+                            br
+                    tr
+                        td.form_field( ) Preferred Time
+                        td(width='10', aligh='right')
+                            font(size='2', color='#ff0000') *
+                        td.form_text
+                            <input id="datetimepicker" name="preferred_time" type="text" >
+                    tr
+                        td.form_field( ) Message
+                        td(width='10', aligh='right')
+                        td.form_text
+                            textarea(name='message', rows='4', cols='25')
+                    tr
+                        td(colspan='3', align='center')
+                            input(type='submit', value='Submit')
+    .sidebar
+        .leftBox_whychoose
+            #head
+                img(src='/images/title_whyChoose.jpg', alt='Why Choose us')
+            #mid
+                ul
+                    li Affordable dental care that won’t break the bank
+                    li High quality general and cosmetic dentistry
+                    li Expert, highly experienced dentists
+                    li Approachable, friendly team
+                    li Modern, clean facilities
+                    li Flexible opening times
+                    li Convenient location
+            #bottom
 
 link(href='/vendor/jquery.datetimepicker.css', rel='stylesheet', type='text/css')
 script(src='/vendor/jquery.js')
