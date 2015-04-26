@@ -173,7 +173,7 @@ td {vertical-align: top}
 #more h2 {text-indent: 0;}
 
 /*contact form*/
-.contactForm{ width:100%; border:1px #B42D7E solid; margin-top:20px; padding:10px; margin-bottom: 40px;}
+.contactForm{border:1px #B42D7E solid; margin-top:20px; padding:10px; margin-bottom: 40px;}
 .form_error {background:#68C9D0; padding:5px; color:#fff}
 .emailGreen_btn a:link{background:transparent url(/images/btn_bgContactGreen.png) no-repeat scroll 0 0; float:right; font-size:1.4em; height:57px; padding:15px 30px 5px 15px; text-align:center; width:175px; color:#68C9D0}
 .emailGreen_btn span{font-size:2.2px;}
@@ -192,6 +192,34 @@ h4, h5, h6		{ font-size: 1em; line-height: 1.5em; margin-bottom: 0.5em }
 
 #slideShow      {width: 360px !important; height: 384px !important; }
 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+	.global_wrap, .layout_top, .global_footer{
+		width: auto;
+		padding:0;
+	}
+	.mobile-nav-wrapper{
+	  display: block;
+	}
+	.global_topNavigation{
+		display: none;
+	}
+	.top_right{
+		background-color: white;
+		padding: 0 25px 25px 100px;
+		margin-bottom: 0;
+		margin-right: 0;
+	}
+	.content{
+		width: 100%;
+	}
+	.sidebar{
+		width: 100%;
+		margin-left: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+}
 @media screen and (max-width: 600px) {
 	a{
 		height: 48px;
@@ -333,6 +361,18 @@ h4, h5, h6		{ font-size: 1em; line-height: 1.5em; margin-bottom: 0.5em }
 	#fee-guide-table{
 		width: 100%;
 		font-size: 1.3em;
+	}
+
+	#fee-guide-table tr{
+		line-height: 100%;
+	}
+
+	.contactForm tr{
+		line-height: 100%
+	}
+
+	.contactForm input[type='text'], .contactForm input[type="email"], .contactForm textarea{
+		width: 90%;
 	}
 
 }	
