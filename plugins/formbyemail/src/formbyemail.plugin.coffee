@@ -13,6 +13,7 @@ module.exports = (BasePlugin) ->
 
       server.post config.path, (req, res) ->
         receivers = config.to
+        sender = config.transport.auth.user
         enquiry = req.body
 
         message = util.format('Name                 %s\r\n', enquiry.name)
@@ -31,7 +32,7 @@ module.exports = (BasePlugin) ->
 
         mailOptions = {
           to: receivers.join(","),
-          from: enquiry.email or "info@se1-dentist.co.uk",
+          from: sender or enquiry.email,
           subject: 'Appointment request ' + enquiry.name + ' <' + enquiry.email + '>',
           text: message,
         }
