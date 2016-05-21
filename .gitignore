@@ -2,3 +2,4 @@ node_modules/
 .idea/
 out/
 .docpad.db
+.DS_Store
