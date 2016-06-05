@@ -23,7 +23,7 @@ module.exports = (BasePlugin) ->
         message += util.format('Preffered time      %s\r\n', enquiry.preferred_time)
         message += util.format('\r\nMessage:\r\n\t%s', enquiry.message)
 
-        if( /\/>/.test(enquiry.message) || /http:/.test(enquiry.message) )
+        if( /\/>/.test(enquiry.message) || /http:/.test(enquiry.message) || /\.com/.test(enquiry.message))
           console.log("Spam detected : \r\n" + message);
           res.redirect enquiry.source
           return
