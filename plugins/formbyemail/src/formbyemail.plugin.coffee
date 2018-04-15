@@ -5,12 +5,11 @@ module.exports = (BasePlugin) ->
   class ContactifyPlugin extends BasePlugin
     name: 'formbyemail'
 
-    config = docpad.getConfig().plugins.contactify
-    smtp = nodemailer.createTransport('SMTP', config.transport)
-
     serverExtend: (opts) ->
       {server} = opts
-
+      config = @docpad.getConfig().plugins.contactify
+      smtp = nodemailer.createTransport(config.transport)
+			
       server.post config.path, (req, res) ->
         receivers = config.to
         sender = config.transport.auth.user
@@ -28,7 +27,7 @@ module.exports = (BasePlugin) ->
           res.redirect enquiry.source
           return
         else
-          console.log("Legitimate message sent: \r\n" + message);
+          console.log("Legitimate message received.");
 
         mailOptions = {
           to: receivers.join(","),
@@ -42,7 +41,7 @@ module.exports = (BasePlugin) ->
             console.log err
             console.log("Message failed: " + message);
           else
-            console.log("Message sent: " + resp.message);
+            console.log("Message emailed to dentist.");
 
         res.redirect enquiry.redirect or config.redirect
 

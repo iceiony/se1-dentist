@@ -33,5 +33,6 @@
     "devDependencies": {
         "coffee-script": "~1.6.2"
     },
-    "main": "./src/gitupdate.plugin.coffee"
+    "main": "./src/gitupdate.plugin.coffee",
+    "private" : true
 }

@@ -35,5 +35,6 @@
     "devDependencies": {
         "coffee-script": "~1.6.2"
     },
-    "main": "./src/formbyemail.plugin.coffee"
+    "main": "./src/formbyemail.plugin.coffee",
+    "private" : true
 }

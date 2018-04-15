@@ -6,11 +6,11 @@ module.exports = (BasePlugin) ->
   class UpdatePlugin extends BasePlugin
     name: 'gitupdate'
 
-    config = docpad.getConfig().plugins.update
     commands = ['git stash', 'git pull --rebase' , 'git stash pop']
 
     serverExtend: (opts) ->
       {server} = opts
+      config = @docpad.getConfig().plugins.update
       
       chainCharacter = if(process.platform == 'win32') then ' & ' else ' ; '
       updateCommand = commands.join(chainCharacter)
@@ -29,7 +29,7 @@ module.exports = (BasePlugin) ->
           console.log stdout
           res.write stdout
 
-          docpad.action "generate", (err,result) ->
+          @docpad.action "generate", (err,result) ->
             console.log "Regenerating complete"
             
             if(err) 
